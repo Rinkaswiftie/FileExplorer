@@ -1,0 +1,14 @@
+<div class="drop-down-section">
+  <div class="drop-down-caption" (click)="selectTab()"
+       [ngClass]="{'active': (selectedTab === dropDownList.name) }">
+    <span class="material-icons text-icon">keyboard_arrow_down</span>
+    <span class="material-icons text-icon">{{dropDownList.icon}}</span>
+    <span>{{ dropDownList.name }}</span>
+  </div>
+  <ul>
+    <app-list-item
+      *ngFor="let folder of dropDownList.folders"
+      [folder]="folder">
+    </app-list-item>
+  </ul>
+</div>

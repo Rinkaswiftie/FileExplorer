@@ -1,0 +1,52 @@
+input {
+  border: 0;
+  height: 100%;
+}
+input:focus {
+  border: 0;
+  outline: 0;
+}
+
+.search-icon {
+  color: var(--onyx);
+  transform: rotateY(180deg);
+}
+
+#arrow-icon {
+  float: right;
+}
+
+#arrow-icon:hover {
+  background-color: #8c61fa;
+}
+
+#searchBox{
+  width: 80%;
+}
+
+#searchBox::-webkit-search-cancel-button{
+  -webkit-appearance: none;
+}
+
+.dropdown{
+  position: relative;
+  padding: 0;
+}
+
+#dropdown-content{
+  border: 1px solid var(--onyx);
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+#dropdown-content div{
+  padding: 0.5em;
+  margin: 0;
+}
+
+#dropdown-content div:hover span{
+  background-color: var(--hover-black);
+}
+
+

@@ -1,0 +1,16 @@
+<div class="dropdown">
+<div class="flex-container">
+    <span class="material-icons search-icon">search</span>
+    <input id='searchBox' type="search"
+           [(ngModel)]="searchText"
+           placeholder="Search {{currentTabName}}" (input)="searchFiles()"/>
+    <span class="material-icons button search-icon" id="cancel-search" *ngIf="searchText.trim() !== ''"
+          (click)="cancelSearch()">close</span>
+    <span id='arrow-icon' class="material-icons" *ngIf="searchText.trim() !== ''" (click)="searchForward()">arrow_forward</span>
+</div>
+<div id="dropdown-content" *ngIf="this.suggestions.length > 0">
+  <div class="button" *ngFor="let s of suggestions" (click)="suggestionSelect(s)">
+    <span class="material-icons text-icon">{{s.icon}}</span>{{s.name}}
+  </div>
+</div>
+</div>

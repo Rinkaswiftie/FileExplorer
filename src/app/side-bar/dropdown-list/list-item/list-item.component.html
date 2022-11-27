@@ -1,0 +1,6 @@
+<li
+  [ngClass]="{'active': (selectedTab === folder.name) }"
+  (click)="select()">
+  <span class="material-icons text-icon" >{{folder.icon}}</span>
+  {{ folder.name }}
+</li>
