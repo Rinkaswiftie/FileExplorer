@@ -1,0 +1,12 @@
+<div class="button image"
+     [ngClass]="{'selected': selected}"
+     (click)="clicked(input)">
+  <img
+    [src]="isFile? './assets/file.png' : './assets/folder.svg'" [alt]="isFile ? 'file': 'folder'">
+  <input class="caption"
+         #input
+         [disabled]="!fileRename || !selected"
+         [ngClass]="{'focus': fileRename && selected}"
+         [(ngModel)]="fileName"
+         (focusout)="renameFile()">
+</div>

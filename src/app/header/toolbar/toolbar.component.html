@@ -1,0 +1,95 @@
+<div id="tools" class="flex-container">
+  <div id="clipboard" class="flex-items">
+    <div class="flex-container">
+      <div class="flex-item button square-item">
+        <div class="material-icons">push_pin</div>
+        <div>Pin to Quick Access</div>
+      </div>
+      <div class="flex-item button">
+        <div class="material-icons">content_copy</div>
+        <div>Copy</div>
+      </div>
+      <div class="flex-item button">
+        <div class="material-icons">content_paste</div>
+        <div>Paste</div>
+      </div>
+      <div class="flex-item">
+        <div class="button"><span class="material-icons text-icon">content_cut</span><span>Cut</span></div>
+        <div class="button"><span class="material-icons text-icon">content_copy</span><span>Copy path</span>
+        </div>
+        <div class="button"><span
+          class="material-icons text-icon">content_paste</span><span>Paste shortcut</span></div>
+      </div>
+    </div>
+    <div class="tool-caption">Clipboard</div>
+  </div>
+  <div class="divider"></div>
+  <div id="organise" class="flex-items">
+    <div class="flex-container flex-item1">
+      <div class="flex-item flex-container">
+        <div class="flex-item button">
+          <div class="material-icons big-icon">drive_file_move</div>
+          <div>Move to</div>
+        </div>
+        <div class="flex-item button">
+          <div class="material-icons big-icon">folder_copy</div>
+          <div>Copy to</div>
+        </div>
+      </div>
+      <div class="flex-item flex-container">
+        <div class="flex-item button">
+          <div class="material-icons big-icon" style="color: #cb1e1e">close</div>
+          <div>Delete</div>
+        </div>
+        <div class="flex-item button">
+          <div class="material-icons big-icon">drive_file_rename_outline</div>
+          <div>Rename</div>
+        </div>
+      </div>
+    </div>
+    <div class="tool-caption flex-item1">
+      Organize
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div id="new" class="flex-items">
+    <div class="flex-container">
+      <div class="flex-item button" (click)="addNewFolder()" id="add_new_folder">
+        <div class="material-icons big-icon">create_new_folder</div>
+        <div>New Folder</div>
+      </div>
+      <div class="flex-item">
+        <div class="button"><span class="material-icons text-icon ">add_box</span><span>New Item</span></div>
+        <div class="button"><span class="material-icons text-icon">accessibility</span><span>Easy Access</span></div>
+      </div>
+    </div>
+    <div class="tool-caption"> New</div>
+  </div>
+  <div class="divider"></div>
+  <div id="open" class="flex-item">
+    <div class="flex-container">
+      <div class="flex-item button">
+        <div class="material-icons big-icon">task</div>
+        <div>Properties</div>
+      </div>
+      <div class="flex-item">
+        <div class="button"><span class="material-icons text-icon">file_open</span>Open</div>
+        <div class="button"><span class="material-icons text-icon">edit</span>Edit</div>
+        <div class="button"><span class="material-icons text-icon">history</span>History</div>
+      </div>
+    </div>
+    <div class="tool-caption"> Open</div>
+  </div>
+  <div class="divider"></div>
+  <div id="select" class="flex-items">
+    <div class="flex-container">
+      <div class="flex-item">
+        <div class="button"><span class="material-icons text-icon">grid_view</span>Select all</div>
+        <div class="button"><span class="material-icons text-icon">apps</span>Select none</div>
+        <div class="button"><span class="material-icons text-icon">grid_on</span>Invert Selection</div>
+      </div>
+    </div>
+    <div class="tool-caption"> Select</div>
+  </div>
+  <div class="divider"></div>
+</div>

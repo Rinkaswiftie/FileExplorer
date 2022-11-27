@@ -1,0 +1,19 @@
+.left-icons {
+  font-size: 1.15em;
+  line-height: normal;
+  float: left;
+  vertical-align: center;
+  text-align: center;
+}
+
+.right-icons {
+  font-size: 1.15em;
+  float: right;
+  width: 2em;
+  text-align: center;
+  padding: 0.2em;
+}
+
+#close:hover{
+  background-color: var(--red);
+}

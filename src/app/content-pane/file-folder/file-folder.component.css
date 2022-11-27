@@ -1,0 +1,14 @@
+.caption {
+  text-align: center;
+  border: 0;
+  outline: 0;
+  display: block;
+  border-radius: 0;
+}
+
+.image {
+  padding: 0;
+  text-align: center;
+}
+
+

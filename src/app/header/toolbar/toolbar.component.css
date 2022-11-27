@@ -1,0 +1,61 @@
+.flex-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0.1em;
+}
+
+.flex-item, .flex-item * {
+  align-self: center;
+  padding: 0.15rem;
+}
+
+#clipboard .button:hover *,
+#organise .button:hover *,
+#new .button:hover *,
+#open .button:hover *,
+#select .button:hover * {
+  background-color: var(--hover-black);
+}
+
+
+.button:hover {
+  background-color: var(--hover-black);
+}
+
+#tools .button:hover, #tools .button:hover * {
+  background-color: var(--hover-black);
+}
+
+.text-icon {
+  font-size: 1rem;
+  margin-right: 0.3rem;
+  vertical-align: middle;
+}
+
+.square-item {
+  flex-basis: 6rem;
+  text-align: center;
+}
+
+.tool-caption {
+  text-align: center;
+  color: var(--gray-text);
+}
+
+.separator{
+  border-right: 0.1em solid var(--gray-text);
+}
+
+
+#organise .big-icon{
+  font-size: 2.6rem;
+}
+#new .big-icon {
+  font-size: 2.9rem;
+}
+
+#open .big-icon{
+  font-size: 2.9rem;
+}

@@ -1,0 +1,27 @@
+<article>
+  <div class="button content-header" *ngIf="sectionedDisplay">
+    <span class="material-icons text-icon">keyboard_arrow_down</span>
+    <span>{{section.name}} - ({{sectionCount}})</span>
+  </div>
+  <div class="flex-container" id="folders">
+    <app-file-folder
+      class="flex-item button image"
+      *ngFor="let file of section.files"
+      [fId]="file.id"
+      [title]="file.name"
+      [icon]="file.icon"
+      [isFile]="true"
+    >
+    </app-file-folder>
+    <app-file-folder
+      class="flex-item button image"
+      *ngFor="let file of section.folders"
+      [fId]="file.id"
+      [title]="file.name"
+      [icon]="file.icon"
+      [isFile]="false"
+    ></app-file-folder>
+  </div>
+  <br>
+  <br>
+</article>
